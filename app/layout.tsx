@@ -11,27 +11,14 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "PARK SU YOUNG — Designer Portfolio",
-  description: "UI/UX Designer Portfolio — 사용자의 경험을 이해하고, 이유 있는 디자인을 만듭니다.",
+  description: "UI/UX Designer Portfolio 2026",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="ko" className={montserrat.variable}>
-      <head>
-        <link
-          rel="preconnect"
-          href="https://cdn.jsdelivr.net"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
-        />
-      </head>
       <body>{children}</body>
     </html>
   );
