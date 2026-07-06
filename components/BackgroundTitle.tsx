@@ -2,17 +2,19 @@
 
 import { motion, Transition } from "framer-motion";
 
+const ease = [0.25, 0.1, 0.25, 1.0] as const;
+
 export default function BackgroundTitle() {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1.2, delay: 0.3, ease: [0.25, 0.1, 0.25, 1.0] } as Transition}
+      transition={{ duration: 1.1, delay: 0.25, ease } as Transition}
       aria-hidden="true"
       style={{
         position: "absolute",
-        bottom: "-20px",
-        left: "18vw",
+        bottom: 0,
+        left: "20vw",
         zIndex: 0,
         pointerEvents: "none",
         userSelect: "none",
@@ -24,7 +26,9 @@ export default function BackgroundTitle() {
         style={{
           fontFamily: "var(--font-montserrat), 'Montserrat', sans-serif",
           fontWeight: 900,
-          fontSize: "clamp(200px, 22vw, 320px)",
+          /* Futura substitute: Montserrat Black
+             clamp keeps the text from overflowing too much on small screens */
+          fontSize: "clamp(140px, 20vw, 300px)",
           color: "#2B2B2B",
           display: "inline-flex",
           alignItems: "baseline",
@@ -33,11 +37,13 @@ export default function BackgroundTitle() {
       >
         <span>Portfo</span>
         <span>l</span>
-        {/* Custom 'i' with Wine Red dot */}
+
+        {/* 'i' — stem kept, dot replaced with Wine Red circle */}
         <span style={{ position: "relative", display: "inline-block" }}>
-          {/* Transparent 'i' preserves correct spacing */}
+          {/* Transparent character maintains advance-width spacing */}
           <span style={{ color: "transparent" }}>i</span>
-          {/* 'i' vertical stem */}
+
+          {/* Vertical stem */}
           <span
             style={{
               position: "absolute",
@@ -50,7 +56,8 @@ export default function BackgroundTitle() {
               display: "block",
             }}
           />
-          {/* Wine Red dot */}
+
+          {/* Wine Red dot — replaces 'i' tittle */}
           <span
             style={{
               position: "absolute",
@@ -65,6 +72,7 @@ export default function BackgroundTitle() {
             }}
           />
         </span>
+
         <span>o</span>
       </span>
     </motion.div>

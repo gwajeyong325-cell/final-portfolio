@@ -6,7 +6,7 @@ export default function ProjectsPage() {
     <div
       style={{
         position: "relative",
-        height: "100vh",
+        height: "100svh",
         overflow: "hidden",
         backgroundColor: "#F5F5F3",
       }}
@@ -15,20 +15,18 @@ export default function ProjectsPage() {
 
       <div
         style={{
-          maxWidth: "1600px",
-          margin: "0 auto",
-          paddingLeft: "80px",
-          paddingRight: "80px",
-          paddingTop: "120px",
+          position: "absolute",
+          top: "17vh",
+          left: "5.5vw",
         }}
       >
         <p
           style={{
             fontWeight: 700,
-            fontSize: "14px",
+            fontSize: "clamp(10px, 0.85vw, 13px)",
             letterSpacing: "0.12em",
             color: "#B33E5C",
-            marginBottom: "24px",
+            marginBottom: "1.2vh",
           }}
         >
           PROJECTS
@@ -36,10 +34,11 @@ export default function ProjectsPage() {
         <h2
           style={{
             fontWeight: 700,
-            fontSize: "48px",
-            lineHeight: 1.1,
+            fontSize: "clamp(36px, 5vw, 76px)",
+            lineHeight: 1.05,
             color: "#1A1A1A",
-            marginBottom: "32px",
+            whiteSpace: "nowrap",
+            marginBottom: "3vh",
           }}
         >
           WORK
@@ -47,10 +46,9 @@ export default function ProjectsPage() {
         <p
           style={{
             fontWeight: 400,
-            fontSize: "18px",
+            fontSize: "clamp(13px, 1.15vw, 17px)",
             lineHeight: 1.8,
             color: "#666666",
-            maxWidth: "480px",
           }}
         >
           Projects 페이지가 개발될 공간입니다.
