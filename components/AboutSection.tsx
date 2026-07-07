@@ -103,18 +103,18 @@ export default function AboutSection({ onVisible }: { onVisible: () => void }) {
         秀
       </span>
 
-      {/* ── 秀 Layer 2 — filled center ── */}
+      {/* ── 秀 Layer 2 — filled right ── */}
       <span
         aria-hidden="true"
         style={{
           position: "absolute",
           top: "18%",
-          left: "20%",
+          right: "8%",
           fontFamily: CHAR_FONT,
           fontWeight: 800,
           fontSize: "clamp(160px, 30vh, 290px)",
           lineHeight: 1,
-          color: "#231F20",
+          color: "#6B6B6B",
           userSelect: "none",
           pointerEvents: "none",
           zIndex: 2,
