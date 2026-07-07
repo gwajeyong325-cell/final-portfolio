@@ -124,49 +124,14 @@ export default function HomeSection({ onVisible }: { onVisible: () => void }) {
       >
         <span
           style={{
-            fontFamily: "var(--font-montserrat), Montserrat, sans-serif",
+            fontFamily: "var(--font-montserrat), Montserrat, 'Futura', sans-serif",
             fontWeight: 900,
-            fontSize: "clamp(180px, 32vh, 330px)",
+            fontSize: "clamp(180px, 18vw, 340px)",
             color: "#2B2B2B",
-            display: "inline-flex",
-            alignItems: "baseline",
             letterSpacing: "-0.02em",
           }}
         >
-          <span>Portfo</span>
-          <span>l</span>
-
-          {/* 'i' — stem + Wine Red dot */}
-          <span style={{ position: "relative", display: "inline-block" }}>
-            <span style={{ color: "transparent" }}>i</span>
-            <span
-              style={{
-                position: "absolute",
-                bottom: "0.04em",
-                left: "50%",
-                transform: "translateX(-50%)",
-                width: "0.13em",
-                height: "0.68em",
-                backgroundColor: "#2B2B2B",
-                display: "block",
-              }}
-            />
-            <span
-              style={{
-                position: "absolute",
-                top: "0.04em",
-                left: "50%",
-                transform: "translateX(-50%)",
-                width: "0.38em",
-                height: "0.38em",
-                borderRadius: "50%",
-                backgroundColor: "#B33E5C",
-                display: "block",
-              }}
-            />
-          </span>
-
-          <span>o</span>
+          Portfolio
         </span>
       </motion.div>
     </section>
