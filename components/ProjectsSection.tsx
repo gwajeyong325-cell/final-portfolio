@@ -8,35 +8,35 @@ const ease = [0.25, 0.1, 0.25, 1.0] as const;
 
 const PROJECTS = [
   {
-    title: "CGV 랜딩페이지 제작",
+    title: "CGV 랜딩페이지 리뉴얼",
     category: "WEB Design",
-    image: "/images/project-1.png",
-    pdf: "#",
+    thumbnail: "/images/projects/pj1.png",
+    pdf: "/images/projects/project1_cgv.pdf",
   },
   {
-    title: "계명대학교 수강신청 어플 기획",
-    category: "UXUI Design",
-    image: "/images/project-2.png",
-    pdf: "#",
+    title: "계명대학교 수강신청 앱",
+    category: "UX/UI Design",
+    thumbnail: "/images/projects/pj2.png",
+    pdf: "/images/projects/project2_kmu.pdf",
   },
   {
-    title: "YES24 티켓 예매페이지 리뉴얼",
+    title: "YES24 예매페이지 리뉴얼",
     category: "WEB Design",
-    image: "/images/project-3.png",
-    pdf: "#",
+    thumbnail: "/images/projects/pj3.png",
+    pdf: "/images/projects/project3_yes24.pdf",
   },
 ];
 
 function ProjectCard({
   title,
   category,
-  image,
+  thumbnail,
   pdf,
   delay,
 }: {
   title: string;
   category: string;
-  image: string;
+  thumbnail: string;
   pdf: string;
   delay: number;
 }) {
@@ -58,12 +58,12 @@ function ProjectCard({
         color: "inherit",
       }}
     >
-      {/* Thumbnail — A4 landscape ratio (297:210) */}
+      {/* Thumbnail — A4 portrait ratio (210:297) */}
       <div
         style={{
           position: "relative",
           width: "100%",
-          aspectRatio: "297 / 210",
+          aspectRatio: "210 / 297",
           borderRadius: "clamp(8px, 0.9vw, 14px)",
           overflow: "hidden",
           backgroundColor: "#D9D9D9",
@@ -71,7 +71,7 @@ function ProjectCard({
         }}
       >
         <Image
-          src={image}
+          src={thumbnail}
           alt={title}
           fill
           style={{ objectFit: "cover" }}
