@@ -64,7 +64,7 @@ function ProjectCard({
         style={{
           position: "relative",
           width: "100%",
-          aspectRatio: "210 / 297",
+          aspectRatio: "297 / 210",
           borderRadius: "clamp(8px, 0.9vw, 14px)",
           overflow: "hidden",
           backgroundColor: "#D9D9D9",
