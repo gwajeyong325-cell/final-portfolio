@@ -5,25 +5,26 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 
 const ease = [0.25, 0.1, 0.25, 1.0] as const;
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 const PROJECTS = [
   {
     title: "CGV 랜딩페이지 리뉴얼",
     category: "WEB Design",
-    thumbnail: "/images/projects/pj1.png",
-    pdf: "/images/projects/project1_cgv.pdf",
+    thumbnail: `${BASE}/images/projects/pj1.png`,
+    pdf: `${BASE}/images/projects/project1_cgv.pdf`,
   },
   {
     title: "계명대학교 수강신청 앱",
     category: "UX/UI Design",
-    thumbnail: "/images/projects/pj2.png",
-    pdf: "/images/projects/project2_kmu.pdf",
+    thumbnail: `${BASE}/images/projects/pj2.png`,
+    pdf: `${BASE}/images/projects/project2_kmu.pdf`,
   },
   {
     title: "YES24 예매페이지 리뉴얼",
     category: "WEB Design",
-    thumbnail: "/images/projects/pj3.png",
-    pdf: "/images/projects/project3_yes24.pdf",
+    thumbnail: `${BASE}/images/projects/pj3.png`,
+    pdf: `${BASE}/images/projects/project3_yes24.pdf`,
   },
 ];
 
