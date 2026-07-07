@@ -87,11 +87,11 @@ export default function AboutSection({ onVisible }: { onVisible: () => void }) {
         aria-hidden="true"
         style={{
           position: "absolute",
-          bottom: "-12%",
-          left: "-8%",
+          bottom: "-8%",
+          left: "-5%",
           fontFamily: CHAR_FONT,
           fontWeight: 800,
-          fontSize: "clamp(440px, 55vw, 760px)",
+          fontSize: "clamp(200px, 38vh, 360px)",
           lineHeight: 1,
           color: "transparent",
           WebkitTextStroke: "2.5px #B33E5C",
@@ -108,11 +108,11 @@ export default function AboutSection({ onVisible }: { onVisible: () => void }) {
         aria-hidden="true"
         style={{
           position: "absolute",
-          top: "14%",
-          left: "18%",
+          top: "18%",
+          left: "20%",
           fontFamily: CHAR_FONT,
           fontWeight: 800,
-          fontSize: "clamp(340px, 42vw, 580px)",
+          fontSize: "clamp(160px, 30vh, 290px)",
           lineHeight: 1,
           color: "#231F20",
           userSelect: "none",
@@ -128,11 +128,11 @@ export default function AboutSection({ onVisible }: { onVisible: () => void }) {
         aria-hidden="true"
         style={{
           position: "absolute",
-          top: "-18%",
-          right: "-10%",
+          top: "-10%",
+          right: "-6%",
           fontFamily: CHAR_FONT,
           fontWeight: 800,
-          fontSize: "clamp(440px, 55vw, 760px)",
+          fontSize: "clamp(200px, 38vh, 360px)",
           lineHeight: 1,
           color: "transparent",
           WebkitTextStroke: "2.5px #B33E5C",
