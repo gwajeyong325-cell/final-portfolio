@@ -114,7 +114,7 @@ export default function AboutSection({ onVisible }: { onVisible: () => void }) {
           fontWeight: 800,
           fontSize: "clamp(160px, 30vh, 290px)",
           lineHeight: 1,
-          color: "#6B6B6B",
+          color: "#231F20",
           userSelect: "none",
           pointerEvents: "none",
           zIndex: 2,
